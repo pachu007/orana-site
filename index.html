@@ -18,34 +18,124 @@
 
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "HealthClub",
-  "name": "Orana Pilates & Balance",
-  "description": "Estudio de Pilates Reformer, Pilates Mat, Barre, pesas ligeras y cardio con cafetería en Riobamba, Ecuador.",
-  "telephone": "+593985834572",
-  "priceRange": "$5 - $432",
-  "address": {
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebSite",
+   "@id": "https://pachu007.github.io/orana-site/#website",
+   "url": "https://pachu007.github.io/orana-site/",
+   "name": "Orana Pilates & Balance",
+   "inLanguage": "es-EC",
+   "publisher": {
+    "@id": "https://pachu007.github.io/orana-site/#studio"
+   }
+  },
+  {
+   "@type": [
+    "HealthClub",
+    "LocalBusiness"
+   ],
+   "@id": "https://pachu007.github.io/orana-site/#studio",
+   "url": "https://pachu007.github.io/orana-site/",
+   "name": "Orana Pilates & Balance",
+   "alternateName": [
+    "Orana Pilates",
+    "Orana Pilates Riobamba",
+    "Orana pilates & balance Riobamba"
+   ],
+   "description": "Estudio de Pilates Reformer, Pilates Mat, Barre, pesas ligeras y cardio con cafetería en Galería Shopping, Riobamba, Ecuador. Clase individual desde $5; clase de sábado abierta a mujeres y hombres.",
+   "telephone": "+593985834572",
+   "priceRange": "$5 - $432",
+   "currenciesAccepted": "USD",
+   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Galería Shopping, Girasoles y Av. Antonio José de Sucre",
     "addressLocality": "Riobamba",
     "addressRegion": "Chimborazo",
     "addressCountry": "EC"
-  },
-  "sameAs": ["https://www.instagram.com/oranapilates.ec/"],
-  "hasOfferCatalog": {
+   },
+   "areaServed": {
+    "@type": "City",
+    "name": "Riobamba"
+   },
+   "knowsAbout": [
+    "Pilates Reformer",
+    "Pilates Mat",
+    "Barre",
+    "Entrenamiento con pesas ligeras",
+    "Spinning"
+   ],
+   "sameAs": [
+    "https://www.instagram.com/oranapilates.ec/"
+   ],
+   "hasOfferCatalog": {
     "@type": "OfferCatalog",
     "name": "Planes Orana",
     "itemListElement": [
-      {"@type":"Offer","name":"Clase individual","price":"5","priceCurrency":"USD"},
-      {"@type":"Offer","name":"Plan Harmony (8 clases)","price":"25","priceCurrency":"USD"},
-      {"@type":"Offer","name":"Plan Balance (12 clases)","price":"35","priceCurrency":"USD"},
-      {"@type":"Offer","name":"Plan Orana (20 clases)","price":"45","priceCurrency":"USD"},
-      {"@type":"Offer","name":"Plan Trimestral (3 meses)","price":"120","priceCurrency":"USD"},
-      {"@type":"Offer","name":"Plan 6 meses","price":"228","priceCurrency":"USD"},
-      {"@type":"Offer","name":"Plan 12 meses","price":"432","priceCurrency":"USD"},
-      {"@type":"Offer","name":"Plan 4 sábados","price":"15","priceCurrency":"USD"}
+     {
+      "@type": "Offer",
+      "name": "Clase individual",
+      "price": "5",
+      "priceCurrency": "USD"
+     },
+     {
+      "@type": "Offer",
+      "name": "Plan Harmony (8 clases)",
+      "price": "25",
+      "priceCurrency": "USD"
+     },
+     {
+      "@type": "Offer",
+      "name": "Plan Balance (12 clases)",
+      "price": "35",
+      "priceCurrency": "USD"
+     },
+     {
+      "@type": "Offer",
+      "name": "Plan Orana (20 clases)",
+      "price": "45",
+      "priceCurrency": "USD"
+     },
+     {
+      "@type": "Offer",
+      "name": "Plan Trimestral (3 meses)",
+      "price": "120",
+      "priceCurrency": "USD"
+     },
+     {
+      "@type": "Offer",
+      "name": "Plan 6 meses",
+      "price": "228",
+      "priceCurrency": "USD"
+     },
+     {
+      "@type": "Offer",
+      "name": "Plan 12 meses",
+      "price": "432",
+      "priceCurrency": "USD"
+     },
+     {
+      "@type": "Offer",
+      "name": "Plan 4 sábados",
+      "price": "15",
+      "priceCurrency": "USD"
+     },
+     {
+      "@type": "Offer",
+      "name": "Combo 2 personas (por persona)",
+      "price": "42.50",
+      "priceCurrency": "USD"
+     },
+     {
+      "@type": "Offer",
+      "name": "Combo 4 personas o más (por persona)",
+      "price": "37.50",
+      "priceCurrency": "USD"
+     }
     ]
+   }
   }
+ ]
 }
 </script>
 <script type="application/ld+json">
@@ -56,7 +146,7 @@
     {"@type":"Question","name":"¿Necesito experiencia previa para asistir?","acceptedAnswer":{"@type":"Answer","text":"No. No necesitas experiencia previa. Nuestras sesiones están diseñadas para que puedas comenzar y avanzar de acuerdo con tu propio nivel."}},
     {"@type":"Question","name":"¿Qué tipo de entrenamiento hacen en Orana?","acceptedAnswer":{"@type":"Answer","text":"Nuestra experiencia combina diferentes formas de movimiento, incluyendo Pilates Reformer, Pilates Mat, Barre, pesas ligeras y, en determinadas sesiones, cardio como spinning."}},
     {"@type":"Question","name":"¿Cuánto cuesta una clase de pilates en Riobamba?","acceptedAnswer":{"@type":"Answer","text":"En Orana la clase individual cuesta $5. Los planes mensuales empiezan en $25 por 8 clases, y hay planes de 3, 6 y 12 meses."}},
-    {"@type":"Question","name":"¿Hay clases los sábados?","acceptedAnswer":{"@type":"Answer","text":"Sí. Cada sábado hay una clase especial abierta al público por $5. Con Plan Orana activo es gratis, con otros planes activos cuesta $3, y el Plan 4 sábados cuesta $15."}},
+    {"@type":"Question","name":"¿Hay clases los sábados?","acceptedAnswer":{"@type":"Answer","text":"Sí. Cada sábado hay una clase especial abierta al público, para mujeres y hombres, por $5. Con Plan Orana activo es gratis, con otros planes activos cuesta $3, y el Plan 4 sábados cuesta $15."}},
     {"@type":"Question","name":"¿Tengo que elegir entre Reformer, Mat y Barre?","acceptedAnswer":{"@type":"Answer","text":"No necesariamente. Nuestra propuesta busca integrar diferentes disciplinas dentro de la experiencia Orana, por lo que podrás disfrutar de diferentes tipos de entrenamiento."}},
     {"@type":"Question","name":"¿Qué debo llevar?","acceptedAnswer":{"@type":"Answer","text":"Te recomendamos usar ropa deportiva cómoda y llevar tu botella de agua."}},
     {"@type":"Question","name":"¿Puedo asistir si nunca he hecho Pilates?","acceptedAnswer":{"@type":"Answer","text":"Sí. Todas son bienvenidas. Si es tu primera vez, cuéntanos al llegar para que podamos orientarte."}},
@@ -121,6 +211,25 @@
   </div>
 </section>
 
+
+<!-- DATOS RÁPIDOS (answer-first, extraíble por buscadores y asistentes de IA) -->
+<section class="facts" id="datos" aria-labelledby="datos-h">
+  <div class="wrap">
+    <h2 id="datos-h" class="rv">Orana Pilates &amp; Balance: <em>pilates en Riobamba</em></h2>
+    <p class="lede rv">Orana es un estudio de Pilates Reformer, Pilates Mat y Barre en Galería Shopping, Riobamba, Ecuador. La clase individual cuesta $5, los planes mensuales empiezan en $25 por 8 clases y cada sábado hay una clase especial abierta a mujeres y hombres.</p>
+    <dl class="fact-grid rv">
+      <div><dt>Qué ofrece</dt><dd>Pilates Reformer, Pilates Mat, Barre, pesas ligeras y cardio (spinning)</dd></div>
+      <div><dt>Dónde</dt><dd>Galería Shopping, Girasoles y Av. Antonio José de Sucre, Riobamba</dd></div>
+      <div><dt>Precio de una clase</dt><dd>$5 (clase individual)</dd></div>
+      <div><dt>Planes mensuales</dt><dd>8 clases $25 · 12 clases $35 · 20 clases $45</dd></div>
+      <div><dt>Sábados</dt><dd>Clase abierta al público $5 · con Plan Orana, gratis</dd></div>
+      <div><dt>Duración</dt><dd>60 minutos por clase</dd></div>
+      <div><dt>Horarios</dt><dd>06:00–10:00 y 17:00–21:00</dd></div>
+      <div><dt>Reservas</dt><dd>WhatsApp +593 98 583 4572</dd></div>
+    </dl>
+  </div>
+</section>
+
 <!-- BIENVENIDA -->
 <section class="welcome" id="bienvenida">
   <div class="wrap split">
@@ -147,9 +256,9 @@
       <p class="lede rv">No tienes que elegir entre Pilates, Barre o entrenamiento funcional. Combinamos métodos de movimiento para crear entrenamientos completos y dinámicos.</p>
     </div>
     <div class="exp-list">
-      <div class="exp-row rv"><span class="n">01</span><h3>Pilates Reformer</h3><p>Trabaja fuerza, estabilidad, control y movilidad a través del Reformer. Movimientos conscientes que te ayudan a fortalecer tu cuerpo y mejorar tu postura mientras desafías tus músculos.</p></div>
-      <div class="exp-row rv"><span class="n">02</span><h3>Pilates Mat</h3><p>Trabaja tu cuerpo desde el mat con control, respiración y tu propio peso corporal. Podemos incorporar accesorios para hacer cada entrenamiento más dinámico y desafiante.</p></div>
-      <div class="exp-row rv"><span class="n">03</span><h3>Barre</h3><p>Movimientos inspirados en el ballet, el Pilates y el entrenamiento funcional. Fuerza, resistencia, equilibrio y control con movimientos pequeños y precisos que hacen trabajar cada músculo.</p></div>
+      <div class="exp-row rv"><span class="n">01</span><h3>Pilates Reformer <small>en Riobamba</small></h3><p>Trabaja fuerza, estabilidad, control y movilidad a través del Reformer. Movimientos conscientes que te ayudan a fortalecer tu cuerpo y mejorar tu postura mientras desafías tus músculos.</p></div>
+      <div class="exp-row rv"><span class="n">02</span><h3>Pilates Mat <small>en Riobamba</small></h3><p>Trabaja tu cuerpo desde el mat con control, respiración y tu propio peso corporal. Podemos incorporar accesorios para hacer cada entrenamiento más dinámico y desafiante.</p></div>
+      <div class="exp-row rv"><span class="n">03</span><h3>Barre <small>en Riobamba</small></h3><p>Movimientos inspirados en el ballet, el Pilates y el entrenamiento funcional. Fuerza, resistencia, equilibrio y control con movimientos pequeños y precisos que hacen trabajar cada músculo.</p></div>
       <div class="exp-row rv"><span class="n">04</span><h3>Pesas ligeras</h3><p>Complementan nuestros entrenamientos para trabajar fuerza y resistencia de una manera dinámica.</p></div>
       <div class="exp-row rv"><span class="n">05</span><h3>Cardio</h3><p>Porque también nos gusta subir la energía. En determinadas sesiones incorporamos cardio, como spinning, para darle un extra de intensidad.</p></div>
     </div>
@@ -238,34 +347,138 @@
 
     <div class="panel" id="p1" role="tabpanel" aria-labelledby="t1">
       <div class="cards">
-        <article class="card"><h3>Clase individual</h3><p class="classes">1 clase</p><p class="price">$5</p><p class="unit">por clase</p><p class="sub">Perfecta si quieres conocer Orana, probar una clase o venir de manera ocasional.</p><a class="btn btn-dark" data-wa="Hola Orana, quiero reservar una clase individual ($5)." href="#">Reservar clase</a></article>
-        <article class="card"><h3>Plan Harmony</h3><p class="classes">8 clases</p><p class="price">$25</p><p class="unit">≈ $3,13 por clase</p><p class="sub">Para comenzar a crear tu rutina y disfrutar de Orana durante el mes.</p><a class="btn btn-dark" data-wa="Hola Orana, quiero el Plan Harmony (8 clases, $25)." href="#">Elegir plan</a></article>
-        <article class="card"><h3>Plan Balance</h3><p class="classes">12 clases</p><p class="price">$35</p><p class="unit">≈ $2,92 por clase</p><p class="sub">Más movimiento, más constancia y más momentos para ti.</p><a class="btn btn-dark" data-wa="Hola Orana, quiero el Plan Balance (12 clases, $35)." href="#">Elegir plan</a></article>
-        <article class="card feat"><span class="badge">Mejor valor</span><h3>Plan Orana</h3><p class="classes">20 clases</p><p class="price">$45</p><p class="unit">≈ $2,25 por clase · sábados gratis</p><p class="sub">Para quienes quieren hacer del movimiento una parte importante de su rutina.</p><a class="btn btn-dark" data-wa="Hola Orana, quiero el Plan Orana (20 clases, $45)." href="#">Elegir plan</a></article>
+        <article class="card">
+          <div class="cwrap"><div class="ccard t-pearl" aria-hidden="true">
+            <span class="cc-logo"><i></i><b>ORANA</b></span><span class="cc-spark">✦</span>
+            <svg class="cc-nfc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M8 8.5a5 5 0 0 1 0 7M11.5 6a8.5 8.5 0 0 1 0 12M15 3.5a12 12 0 0 1 0 17"/></svg>
+            <span class="cc-chip"></span>
+            <span class="cc-plan">1 clase</span><span class="cc-sub">PILATES &amp; BALANCE</span>
+          </div></div>
+          <h3>Clase individual</h3><p class="classes">1 clase</p><p class="price">$5</p><p class="unit">por clase</p><p class="sub">Perfecta si quieres conocer Orana, probar una clase o venir de manera ocasional.</p>
+          <a class="btn btn-dark" data-wa="Hola Orana, quiero reservar una clase individual ($5)." href="#">Reservar clase</a></article>
+<article class="card">
+          <div class="cwrap"><div class="ccard t-blush" aria-hidden="true">
+            <span class="cc-logo"><i></i><b>ORANA</b></span><span class="cc-spark">✦</span>
+            <svg class="cc-nfc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M8 8.5a5 5 0 0 1 0 7M11.5 6a8.5 8.5 0 0 1 0 12M15 3.5a12 12 0 0 1 0 17"/></svg>
+            <span class="cc-chip"></span>
+            <span class="cc-plan">8 clases</span><span class="cc-sub">PILATES &amp; BALANCE</span>
+          </div></div>
+          <h3>Plan Harmony</h3><p class="classes">8 clases</p><p class="price">$25</p><p class="unit">≈ $3,13 por clase</p><p class="sub">Para comenzar a crear tu rutina y disfrutar de Orana durante el mes.</p>
+          <a class="btn btn-dark" data-wa="Hola Orana, quiero el Plan Harmony (8 clases, $25)." href="#">Elegir plan</a></article>
+<article class="card">
+          <div class="cwrap"><div class="ccard t-gold" aria-hidden="true">
+            <span class="cc-logo"><i></i><b>ORANA</b></span><span class="cc-spark">✦</span>
+            <svg class="cc-nfc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M8 8.5a5 5 0 0 1 0 7M11.5 6a8.5 8.5 0 0 1 0 12M15 3.5a12 12 0 0 1 0 17"/></svg>
+            <span class="cc-chip"></span>
+            <span class="cc-plan">12 clases</span><span class="cc-sub">PILATES &amp; BALANCE</span>
+          </div></div>
+          <h3>Plan Balance</h3><p class="classes">12 clases</p><p class="price">$35</p><p class="unit">≈ $2,92 por clase</p><p class="sub">Más movimiento, más constancia y más momentos para ti.</p>
+          <a class="btn btn-dark" data-wa="Hola Orana, quiero el Plan Balance (12 clases, $35)." href="#">Elegir plan</a></article>
+<article class="card feat"><span class="badge">Mejor valor</span>
+          <div class="cwrap"><div class="ccard t-ink" aria-hidden="true">
+            <span class="cc-logo"><i></i><b>ORANA</b></span><span class="cc-spark">✦</span>
+            <svg class="cc-nfc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M8 8.5a5 5 0 0 1 0 7M11.5 6a8.5 8.5 0 0 1 0 12M15 3.5a12 12 0 0 1 0 17"/></svg>
+            <span class="cc-chip"></span>
+            <span class="cc-plan">20 clases</span><span class="cc-sub">PILATES &amp; BALANCE</span>
+          </div></div>
+          <h3>Plan Orana</h3><p class="classes">20 clases</p><p class="price">$45</p><p class="unit">≈ $2,25 por clase · sábados gratis</p><p class="sub">Para quienes quieren hacer del movimiento una parte importante de su rutina.</p>
+          <a class="btn btn-dark" data-wa="Hola Orana, quiero el Plan Orana (20 clases, $45)." href="#">Elegir plan</a></article>
       </div>
     </div>
 
     <div class="panel" id="p2" role="tabpanel" aria-labelledby="t2" hidden>
       <div class="cards">
-        <article class="card"><h3>Plan Trimestral</h3><p class="classes">3 meses</p><p class="price">$120</p><p class="unit">≈ $40 por mes</p><p class="sub">Una opción para comprometerte con tu bienestar y construir una rutina a largo plazo.</p><a class="btn btn-dark" data-wa="Hola Orana, quiero el Plan Trimestral ($120)." href="#">Elegir plan</a></article>
-        <article class="card"><h3>Plan 6 meses</h3><p class="classes">6 meses</p><p class="price">$228</p><p class="unit">≈ $38 por mes</p><p class="sub">Seis meses para moverte, fortalecer tu cuerpo y disfrutar de todo lo que Orana tiene para ti.</p><a class="btn btn-dark" data-wa="Hola Orana, quiero el Plan de 6 meses ($228)." href="#">Elegir plan</a></article>
-        <article class="card feat"><span class="badge">Mejor precio por mes</span><h3>Plan 12 meses</h3><p class="classes">12 meses</p><p class="price">$432</p><p class="unit">≈ $36 por mes</p><p class="sub">Un año completo de movimiento, constancia y bienestar. Tu mejor inversión es en ti.</p><a class="btn btn-dark" data-wa="Hola Orana, quiero el Plan de 12 meses ($432)." href="#">Elegir plan</a></article>
+        <article class="card">
+          <div class="cwrap"><div class="ccard t-pearl" aria-hidden="true">
+            <span class="cc-logo"><i></i><b>ORANA</b></span><span class="cc-spark">✦</span>
+            <svg class="cc-nfc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M8 8.5a5 5 0 0 1 0 7M11.5 6a8.5 8.5 0 0 1 0 12M15 3.5a12 12 0 0 1 0 17"/></svg>
+            <span class="cc-chip"></span>
+            <span class="cc-plan">3 meses</span><span class="cc-sub">PILATES &amp; BALANCE</span>
+          </div></div>
+          <h3>Plan Trimestral</h3><p class="classes">3 meses</p><p class="price">$120</p><p class="unit">≈ $40 por mes</p><p class="sub">Una opción para comprometerte con tu bienestar y construir una rutina a largo plazo.</p>
+          <a class="btn btn-dark" data-wa="Hola Orana, quiero el Plan Trimestral ($120)." href="#">Elegir plan</a></article>
+<article class="card">
+          <div class="cwrap"><div class="ccard t-gold" aria-hidden="true">
+            <span class="cc-logo"><i></i><b>ORANA</b></span><span class="cc-spark">✦</span>
+            <svg class="cc-nfc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M8 8.5a5 5 0 0 1 0 7M11.5 6a8.5 8.5 0 0 1 0 12M15 3.5a12 12 0 0 1 0 17"/></svg>
+            <span class="cc-chip"></span>
+            <span class="cc-plan">6 meses</span><span class="cc-sub">PILATES &amp; BALANCE</span>
+          </div></div>
+          <h3>Plan 6 meses</h3><p class="classes">6 meses</p><p class="price">$228</p><p class="unit">≈ $38 por mes</p><p class="sub">Seis meses para moverte, fortalecer tu cuerpo y disfrutar de todo lo que Orana tiene para ti.</p>
+          <a class="btn btn-dark" data-wa="Hola Orana, quiero el Plan de 6 meses ($228)." href="#">Elegir plan</a></article>
+<article class="card feat"><span class="badge">Mejor precio por mes</span>
+          <div class="cwrap"><div class="ccard t-ink" aria-hidden="true">
+            <span class="cc-logo"><i></i><b>ORANA</b></span><span class="cc-spark">✦</span>
+            <svg class="cc-nfc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M8 8.5a5 5 0 0 1 0 7M11.5 6a8.5 8.5 0 0 1 0 12M15 3.5a12 12 0 0 1 0 17"/></svg>
+            <span class="cc-chip"></span>
+            <span class="cc-plan">12 meses</span><span class="cc-sub">PILATES &amp; BALANCE</span>
+          </div></div>
+          <h3>Plan 12 meses</h3><p class="classes">12 meses</p><p class="price">$432</p><p class="unit">≈ $36 por mes</p><p class="sub">Un año completo de movimiento, constancia y bienestar. Tu mejor inversión es en ti.</p>
+          <a class="btn btn-dark" data-wa="Hola Orana, quiero el Plan de 12 meses ($432)." href="#">Elegir plan</a></article>
       </div>
     </div>
 
     <div class="panel" id="p3" role="tabpanel" aria-labelledby="t3" hidden>
       <div class="cards">
-        <article class="card"><h3>Combo 2 personas</h3><p class="classes">¿Vienes con alguien?</p><p class="price">$42,50</p><p class="unit">por persona</p><p class="sub">Una opción perfecta para compartir la experiencia Orana con tu mejor amiga, hermana, pareja o alguien especial.</p><a class="btn btn-dark" data-wa="Hola Orana, quiero el Combo de 2 personas ($42,50 por persona)." href="#">Quiero el combo</a></article>
-        <article class="card feat"><span class="badge">Mejor por persona</span><h3>Combo 4 o más</h3><p class="classes">Armen su grupo</p><p class="price">$37,50</p><p class="unit">por persona</p><p class="sub">Mientras más somos, más disfrutamos. Vivan juntas la experiencia Orana.</p><a class="btn btn-dark" data-wa="Hola Orana, quiero el Combo de 4 personas o más ($37,50 por persona)." href="#">Quiero el combo</a></article>
+        <article class="card">
+          <div class="cwrap"><div class="ccard t-blush" aria-hidden="true">
+            <span class="cc-logo"><i></i><b>ORANA</b></span><span class="cc-spark">✦</span>
+            <svg class="cc-nfc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M8 8.5a5 5 0 0 1 0 7M11.5 6a8.5 8.5 0 0 1 0 12M15 3.5a12 12 0 0 1 0 17"/></svg>
+            <span class="cc-chip"></span>
+            <span class="cc-plan">2 personas</span><span class="cc-sub">PILATES &amp; BALANCE</span>
+          </div></div>
+          <h3>Combo 2 personas</h3><p class="classes">¿Vienes con alguien?</p><p class="price">$42,50</p><p class="unit">por persona</p><p class="sub">Una opción perfecta para compartir la experiencia Orana con tu mejor amiga, hermana, pareja o alguien especial.</p>
+          <a class="btn btn-dark" data-wa="Hola Orana, quiero el Combo de 2 personas ($42,50 por persona)." href="#">Quiero el combo</a></article>
+<article class="card feat"><span class="badge">Mejor por persona</span>
+          <div class="cwrap"><div class="ccard t-ink" aria-hidden="true">
+            <span class="cc-logo"><i></i><b>ORANA</b></span><span class="cc-spark">✦</span>
+            <svg class="cc-nfc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M8 8.5a5 5 0 0 1 0 7M11.5 6a8.5 8.5 0 0 1 0 12M15 3.5a12 12 0 0 1 0 17"/></svg>
+            <span class="cc-chip"></span>
+            <span class="cc-plan">4 o más</span><span class="cc-sub">PILATES &amp; BALANCE</span>
+          </div></div>
+          <h3>Combo 4 o más</h3><p class="classes">Armen su grupo</p><p class="price">$37,50</p><p class="unit">por persona</p><p class="sub">Mientras más somos, más disfrutamos. Vivan juntas la experiencia Orana.</p>
+          <a class="btn btn-dark" data-wa="Hola Orana, quiero el Combo de 4 personas o más ($37,50 por persona)." href="#">Quiero el combo</a></article>
       </div>
     </div>
 
     <div class="panel" id="p4" role="tabpanel" aria-labelledby="t4" hidden>
       <div class="cards">
-        <article class="card"><h3>Público general</h3><p class="classes">Clase de sábado</p><p class="price">$5</p><p class="unit">por clase</p><p class="sub">Ven a conocer la experiencia Orana, el estudio y nuestra comunidad.</p><a class="btn btn-dark" data-sat-wa href="#">Reservar sábado</a></article>
-        <article class="card"><h3>Otros planes activos</h3><p class="classes">Clase de sábado</p><p class="price">$3</p><p class="unit">por clase</p><p class="sub">Si tienes cualquiera de nuestros otros planes activos.</p><a class="btn btn-dark" data-sat-wa href="#">Reservar sábado</a></article>
-        <article class="card feat"><span class="badge">Con Plan Orana</span><h3>Plan Orana activo</h3><p class="classes">Clase de sábado</p><p class="price">Gratis</p><p class="unit">incluida</p><p class="sub">Tu clase de sábado está incluida con tu Plan Orana.</p><a class="btn btn-dark" data-sat-wa href="#">Reservar sábado</a></article>
-        <article class="card"><h3>Plan 4 sábados</h3><p class="classes">4 clases de sábado</p><p class="price">$15</p><p class="unit">por los 4 sábados</p><p class="sub">Una forma sencilla de mantenerte activa durante todo el mes.</p><a class="btn btn-dark" data-wa="Hola Orana, quiero el Plan 4 sábados ($15)." href="#">Quiero mi plan</a></article>
+        <article class="card">
+          <div class="cwrap"><div class="ccard t-pearl" aria-hidden="true">
+            <span class="cc-logo"><i></i><b>ORANA</b></span><span class="cc-spark">✦</span>
+            <svg class="cc-nfc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M8 8.5a5 5 0 0 1 0 7M11.5 6a8.5 8.5 0 0 1 0 12M15 3.5a12 12 0 0 1 0 17"/></svg>
+            <span class="cc-chip"></span>
+            <span class="cc-plan">Sábado</span><span class="cc-sub">PILATES &amp; BALANCE</span>
+          </div></div>
+          <h3>Público general</h3><p class="classes">Clase de sábado</p><p class="price">$5</p><p class="unit">por clase</p><p class="sub">Ven a conocer la experiencia Orana, el estudio y nuestra comunidad. Para mujeres y hombres.</p>
+          <a class="btn btn-dark" data-sat-wa href="#">Reservar sábado</a></article>
+<article class="card">
+          <div class="cwrap"><div class="ccard t-blush" aria-hidden="true">
+            <span class="cc-logo"><i></i><b>ORANA</b></span><span class="cc-spark">✦</span>
+            <svg class="cc-nfc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M8 8.5a5 5 0 0 1 0 7M11.5 6a8.5 8.5 0 0 1 0 12M15 3.5a12 12 0 0 1 0 17"/></svg>
+            <span class="cc-chip"></span>
+            <span class="cc-plan">Sábado</span><span class="cc-sub">PILATES &amp; BALANCE</span>
+          </div></div>
+          <h3>Otros planes activos</h3><p class="classes">Clase de sábado</p><p class="price">$3</p><p class="unit">por clase</p><p class="sub">Si tienes cualquiera de nuestros otros planes activos.</p>
+          <a class="btn btn-dark" data-sat-wa href="#">Reservar sábado</a></article>
+<article class="card feat"><span class="badge">Con Plan Orana</span>
+          <div class="cwrap"><div class="ccard t-ink" aria-hidden="true">
+            <span class="cc-logo"><i></i><b>ORANA</b></span><span class="cc-spark">✦</span>
+            <svg class="cc-nfc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M8 8.5a5 5 0 0 1 0 7M11.5 6a8.5 8.5 0 0 1 0 12M15 3.5a12 12 0 0 1 0 17"/></svg>
+            <span class="cc-chip"></span>
+            <span class="cc-plan">Sábado</span><span class="cc-sub">PILATES &amp; BALANCE</span>
+          </div></div>
+          <h3>Plan Orana activo</h3><p class="classes">Clase de sábado</p><p class="price">Gratis</p><p class="unit">incluida</p><p class="sub">Tu clase de sábado está incluida con tu Plan Orana.</p>
+          <a class="btn btn-dark" data-sat-wa href="#">Reservar sábado</a></article>
+<article class="card">
+          <div class="cwrap"><div class="ccard t-gold" aria-hidden="true">
+            <span class="cc-logo"><i></i><b>ORANA</b></span><span class="cc-spark">✦</span>
+            <svg class="cc-nfc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M8 8.5a5 5 0 0 1 0 7M11.5 6a8.5 8.5 0 0 1 0 12M15 3.5a12 12 0 0 1 0 17"/></svg>
+            <span class="cc-chip"></span>
+            <span class="cc-plan">4 sábados</span><span class="cc-sub">PILATES &amp; BALANCE</span>
+          </div></div>
+          <h3>Plan 4 sábados</h3><p class="classes">4 clases de sábado</p><p class="price">$15</p><p class="unit">por los 4 sábados</p><p class="sub">Una forma sencilla de mantenerte activa durante todo el mes.</p>
+          <a class="btn btn-dark" data-wa="Hola Orana, quiero el Plan 4 sábados ($15)." href="#">Quiero mi plan</a></article>
       </div>
     </div>
     <p class="pr-note rv">Precios en dólares (USD). Escríbenos por WhatsApp y te ayudamos a elegir.</p>
@@ -336,7 +549,7 @@
       <details><summary>¿Necesito experiencia previa para asistir?</summary><p>No. No necesitas experiencia previa. Nuestras sesiones están diseñadas para que puedas comenzar y avanzar de acuerdo con tu propio nivel.</p></details>
       <details><summary>¿Qué tipo de entrenamiento hacen en Orana?</summary><p>Nuestra experiencia combina diferentes formas de movimiento, incluyendo Pilates Reformer, Pilates Mat, Barre, pesas ligeras y, en determinadas sesiones, cardio como spinning.</p></details>
       <details><summary>¿Cuánto cuesta una clase de pilates en Riobamba?</summary><p>En Orana la clase individual cuesta $5. Los planes mensuales empiezan en $25 por 8 clases, y hay planes de 3, 6 y 12 meses.</p></details>
-      <details><summary>¿Hay clases los sábados?</summary><p>Sí. Cada sábado hay una clase especial abierta al público por $5. Con Plan Orana activo es gratis, con otros planes activos cuesta $3, y el Plan 4 sábados cuesta $15.</p></details>
+      <details><summary>¿Hay clases los sábados?</summary><p>Sí. Cada sábado hay una clase especial abierta al público, para mujeres y hombres, por $5. Con Plan Orana activo es gratis, con otros planes activos cuesta $3, y el Plan 4 sábados cuesta $15.</p></details>
       <details><summary>¿Tengo que elegir entre Reformer, Mat y Barre?</summary><p>No necesariamente. Nuestra propuesta busca integrar diferentes disciplinas dentro de la experiencia Orana, por lo que podrás disfrutar de diferentes tipos de entrenamiento.</p></details>
       <details><summary>¿Qué debo llevar?</summary><p>Te recomendamos usar ropa deportiva cómoda y llevar tu botella de agua.</p></details>
       <!-- PENDIENTE (cliente): agregar aquí si las medias antideslizantes son obligatorias -->

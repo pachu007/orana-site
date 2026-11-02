@@ -69,6 +69,50 @@
     });
   });
 
+
+  /* Membership cards: scroll-driven movement + pointer tilt */
+  var wraps = [].slice.call(document.querySelectorAll(".cwrap"));
+  var ticking = false;
+  function clamp(v, a, b) { return Math.max(a, Math.min(b, v)); }
+  function updateCards() {
+    ticking = false;
+    var vh = window.innerHeight;
+    wraps.forEach(function (w, i) {
+      if (!w.offsetParent) return;
+      var r = w.getBoundingClientRect();
+      var p = clamp((vh - r.top) / (vh + r.height), 0, 1);   // 0 = entering, .5 = centered, 1 = leaving
+      var d = 0.5 - p;
+      var k = 1 + (i % 4) * 0.35;                            // each card moves at a different speed
+      w.style.setProperty("--ty", (d * 70 * k).toFixed(1) + "px");
+      w.style.setProperty("--rx", (d * 24).toFixed(2) + "deg");
+      w.style.setProperty("--rz", (d * (i % 2 ? 7 : -7)).toFixed(2) + "deg");
+    });
+  }
+  function requestUpdate() { if (!ticking) { ticking = true; requestAnimationFrame(updateCards); } }
+  if (wraps.length && !reduce) {
+    window.addEventListener("scroll", requestUpdate, { passive: true });
+    window.addEventListener("resize", requestUpdate);
+    document.querySelectorAll(".tab").forEach(function (t) { t.addEventListener("click", function () { setTimeout(requestUpdate, 30); }); });
+    requestUpdate();
+    if (window.matchMedia("(hover:hover)").matches) {
+      document.querySelectorAll(".card").forEach(function (card) {
+        var cc = card.querySelector(".ccard");
+        if (!cc) return;
+        card.addEventListener("pointermove", function (e) {
+          var r = cc.getBoundingClientRect();
+          var x = clamp((e.clientX - r.left) / r.width, 0, 1), y = clamp((e.clientY - r.top) / r.height, 0, 1);
+          cc.style.setProperty("--hy", ((x - 0.5) * 18).toFixed(2) + "deg");
+          cc.style.setProperty("--hx", ((0.5 - y) * 14).toFixed(2) + "deg");
+          cc.style.setProperty("--gx", (x * 100).toFixed(0) + "%");
+          cc.style.setProperty("--gy", (y * 100).toFixed(0) + "%");
+        });
+        card.addEventListener("pointerleave", function () {
+          cc.style.setProperty("--hy", "0deg"); cc.style.setProperty("--hx", "0deg");
+        });
+      });
+    }
+  }
+
   /* Sticky mobile CTA after hero */
   var sticky = document.getElementById("sticky");
   var hero = document.querySelector(".hero");

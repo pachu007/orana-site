@@ -1,0 +1,17 @@
+# Orana Pilates & Balance — everyone is welcome, including AI search crawlers
+User-agent: *
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+
+# TODO: replace with the final domain once connected
+Sitemap: https://pachu007.github.io/orana-site/sitemap.xml
