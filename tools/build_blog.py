@@ -17,6 +17,7 @@ ORG = "Orana Pilates & Balance"
 STUDIO_ID = BASE + "#studio"
 OG = BASE + "assets/img/og.jpg"
 TODAY = "2026-11-02"
+ASSET_V = "20261102b"   # bump when CSS/JS change (avoids stale cache)
 
 WA_ARROW = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>'
 
@@ -143,7 +144,7 @@ def shell(root, title, desc, canonical, body, schema, og_type="article"):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{root}assets/css/style.css">
+<link rel="stylesheet" href="{root}assets/css/style.css?v={ASSET_V}">
 <script type="application/ld+json">
 {json.dumps(schema, ensure_ascii=False, indent=1)}
 </script>
@@ -183,8 +184,8 @@ def shell(root, title, desc, canonical, body, schema, og_type="article"):
     <p class="copy">© <span id="yr">2026</span> Orana Pilates &amp; Balance. Todos los derechos reservados.</p>
   </div>
 </footer>
-<script src="{root}assets/js/site-data.js"></script>
-<script src="{root}assets/js/main.js"></script>
+<script src="{root}assets/js/site-data.js?v={ASSET_V}"></script>
+<script src="{root}assets/js/main.js?v={ASSET_V}"></script>
 </body>
 </html>
 """
