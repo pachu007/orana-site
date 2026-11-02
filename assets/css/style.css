@@ -54,6 +54,8 @@ section{padding:clamp(72px,10vw,128px) 0}
 .nav{position:fixed;inset:14px 0 auto 0;z-index:50;pointer-events:none}
 .nav-in{width:min(1160px,100% - 28px);margin-inline:auto;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 12px 10px 24px;border-radius:99px;background:rgba(245,240,232,.72);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid var(--line);pointer-events:auto}
 .logo{display:flex;align-items:center;gap:10px;line-height:1}
+.logo-img{display:block;height:38px;width:auto}
+.logo-img.logo-foot{height:96px}
 .logo-mark{width:26px;height:26px;border:1.5px solid var(--mocha);border-radius:50%;position:relative}
 .logo-mark::after{content:"✦";position:absolute;top:-7px;right:-4px;font-size:11px;color:var(--gold)}
 .logo-t{display:flex;flex-direction:column}
@@ -81,7 +83,7 @@ section{padding:clamp(72px,10vw,128px) 0}
 @media(max-width:760px){
   .hero{display:block;min-height:0;background:var(--cream)}
   .hero picture{display:block;position:relative;height:62svh;min-height:380px}
-  .hero-img{position:absolute;object-position:50% 20%}
+  .hero-img{position:absolute;object-position:100% 20%}
   .hero::after{inset:auto 0 auto 0;top:0;height:62svh;min-height:380px;background:linear-gradient(0deg,rgba(245,240,232,1) 0%,rgba(245,240,232,0) 22%)}
   .hero-in{padding:6px 0 48px;margin-top:-10px}
   .hero h1{max-width:none;font-size:clamp(2.6rem,12vw,3.6rem)}
