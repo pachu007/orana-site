@@ -11,7 +11,7 @@ commit and push. When the final domain is connected, change BASE only.
 """
 import html, json, os, re
 
-BASE = "https://pachu007.github.io/orana-site/"      # <- change when the domain is connected
+BASE = "https://oranapilatesec.com/"      # <- change when the domain is connected
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ORG = "Orana Pilates & Balance"
 STUDIO_ID = BASE + "#studio"

@@ -13,5 +13,4 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-# TODO: replace with the final domain once connected
-Sitemap: https://pachu007.github.io/orana-site/sitemap.xml
+Sitemap: https://oranapilatesec.com/sitemap.xml
